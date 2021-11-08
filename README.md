@@ -1,4 +1,4 @@
-# Map quadratic function
+# Linear regression
 
 In this repository contains a script that is responsible to do a
 implementation linear-regression ideia.
