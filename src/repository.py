@@ -1,7 +1,3 @@
-from db import DbClient
-
-
-db_client = DbClient("url")
 
 
 def get(uid: str) -> dict:

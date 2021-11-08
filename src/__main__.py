@@ -1,4 +1,4 @@
-from flat.service import get_object
+from src.service import get_object
 
 
 def main():

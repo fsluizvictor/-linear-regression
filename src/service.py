@@ -1,5 +1,5 @@
-from flat import repository
-from flat.models import MyClass
+from src import repository
+from src.models import MyClass
 
 
 def get_object(uid: str) -> MyClass:
