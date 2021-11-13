@@ -1,5 +1,5 @@
-from src import repository
-from src.models import MyClass
+from src.adapter import repository
+from src.model.models import MyClass
 
 
 def get_object(uid: str) -> MyClass:

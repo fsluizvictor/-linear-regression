@@ -1,6 +1,3 @@
-from src.service import get_object
-
-
 def main():
     ...
 

@@ -2,16 +2,16 @@ import csv
 from typing import List
 
 
-def open_file_csv(file_name: str) -> List[List[str]]:
+def open_file_csv(file_name: str) -> List[List[float]]:
     with open(file_name, newline='') as csvfile:
-        spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-        file_rows = list()
+        spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+        content_all = list()
         for row in spamreader:
-            content_row = row
-            if row.__contains__(','):
-                content_row = str(row).split(',')
-            file_rows.append(content_row)
-    return file_rows
+            file_rows = list()
+            for n in row:
+                file_rows.append(float(n))
+            content_all.append(file_rows)
+    return content_all
 
 
 def write_file_csv(file_name: str, content: List[str]):
